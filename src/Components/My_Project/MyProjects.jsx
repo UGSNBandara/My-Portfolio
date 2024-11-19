@@ -2,6 +2,8 @@ import React from 'react'
 import './MyProjects.css'
 import mywork_data from '../../assets/mywork_data'
 import arrow_icon from '../../assets/arrow_icon.svg'
+import { Link } from "react-router-dom";
+
 
 const MyProjects = () => {
     return (
@@ -15,10 +17,12 @@ const MyProjects = () => {
                 })}
             </div>
             <div>
+            <Link to="/projects" style={{ textDecoration: "none", color: "inherit" }}>
                 <div className="myprojects-showmore">
                     <p>Show More</p>
                     <img src={arrow_icon} alt="" />
                 </div>
+            </Link>
             </div>
         </div>
     )

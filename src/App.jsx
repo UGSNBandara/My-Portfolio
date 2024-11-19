@@ -1,24 +1,19 @@
-import React from 'react'
-import Navbar from './Components/Navbar/Navbar'
-import Hero from './Components/Hero/Hero'
-import About from './Components/About/About'
-import MyProjects from './Components/My_Project/MyProjects'
-import Contact from './Components/Contact/Contact'
-import Footer from './Components/Footer/Footer'
-import Experience from './Components/Experience/Experience'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage.jsx";
+import ProjectsPage from "./pages/ProjectPage/ProjectPage.jsx";
+import ExperiencesPage from "./pages/ExperiencePage/ExperiencePage.jsx";
 
 const App = () => {
   return (
-    <div>
-      <Navbar/>
-      <Hero/>
-      <About/>
-      <MyProjects/>
-      <Experience/>
-      <Contact/>
-      <Footer/>
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/experiences" element={<ExperiencesPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
