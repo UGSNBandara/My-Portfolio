@@ -17,7 +17,7 @@ const MyProjects = () => {
                 })}
             </div>
             <div>
-            <Link to="/projects" style={{ textDecoration: "none", color: "inherit" }}>
+            <Link to="/My-Portfolio/projects" style={{ textDecoration: "none", color: "inherit" }}>
                 <div className="myprojects-showmore">
                     <p>Show More</p>
                     <img src={arrow_icon} alt="" />

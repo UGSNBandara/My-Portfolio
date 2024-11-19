@@ -16,7 +16,7 @@ const Experience = () => {
                 })}
             </div>
             <div>
-            <Link to="/experiences" style={{ textDecoration: "none", color: "inherit" }}>
+            <Link to="/My-Portfolio/experiences" style={{ textDecoration: "none", color: "inherit" }}>
                 <div className="myexperience-showmore">
                     <p>Show More</p>
                     <img src={arrow_icon} alt="" />
