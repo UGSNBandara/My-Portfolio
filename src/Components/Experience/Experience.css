@@ -100,3 +100,18 @@
     }
 
 }
+
+@media(max-width:600px){
+
+    .myexperience-container{
+        padding-top: 40px;
+        padding-bottom: 20px;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .myexperience-container img{
+        max-width: 80vw;
+        height: auto;
+    }
+}
