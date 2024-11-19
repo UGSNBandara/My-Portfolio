@@ -109,12 +109,12 @@
         align-items: start;
         top: 0;
         gap: 30px;
-        background-color: #06013d;
+        background-color: #08578b;
         width: 350px;
         height: 100%;
         z-index: 2;
-        transition: right 0.5s;
-        right: -390px;
+        transition: right 0.5s0;
+        right: -600px;
     }
 
     .nav-menu li{
@@ -122,5 +122,21 @@
         padding-left: 100px;
         flex-direction: row;
         gap: 20px;
+    }
+}
+
+@media(max-width:600px){
+    .nav-menu{
+        width: 300px;
+    }
+
+    .nav-menu li{
+        font-size: 25px;
+        padding-left: 50px;
+        gap: 20px;
+    }
+
+    .nav-mob-close{
+        left: 240px;
     }
 }

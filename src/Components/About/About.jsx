@@ -33,6 +33,9 @@ const About = () => {
                         <div className="about-skill">
                             <p>C#</p><hr style={{ width: "30%" }}></hr>
                         </div>
+                        <div className="about-skill">
+                            <p>100 %</p><hr style={{ width: "100%" }}></hr>
+                        </div>
                     </div>
                 </div>
             </div>

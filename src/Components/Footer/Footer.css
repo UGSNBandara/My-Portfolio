@@ -98,3 +98,10 @@
         margin-bottom: 50px ;
     }
 }
+
+@media(max-width:800px){
+.footer-email-input{
+    padding: 20px 30px;
+    padding-right: 20px;
+}
+}

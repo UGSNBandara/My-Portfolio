@@ -136,8 +136,10 @@
     }
 
     .about-skill{
+        display: flex;
+        flex-direction: column;
         gap: 20px;
-        align-items: center;
+        align-items: start;
     }
 
     .about-skill p{
@@ -193,7 +195,7 @@
 
     .about-skill{
         gap: 20px;
-        align-items: center;
+        align-items: start;
     }
 
     .about-skill p{
