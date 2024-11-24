@@ -48,34 +48,6 @@
     transition: 0.5s;
 }
 
-.about-skills {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.about-skill {
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    transition: 0.3s;
-}
-
-.about-skill p {
-    min-width: 200px;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.about-skill hr {
-    outline: none;
-    border: none;
-    width: 50%;
-    height: 8px;
-    border-radius: 50px;
-    background: linear-gradient(45deg, #fff, #00aaff, #0059b3);
-}
-
 .about-achivements {
     display: flex;
     width: 100%;
@@ -110,63 +82,19 @@
     font-weight: 500;
 }
 
-@media(max-width:800px){
-    .about{
-        gap: 80px;
-        margin: 50px 70px;
-        align-items: start;
-    }
-
-    .about-title h1{
-        font-size: 50px;
-        padding: 0;
-    }
-
-    .about-section{
-        flex-direction: column;
-    }
-
-    .about-left{
-       display: none; 
-    }
-
-    .about-paragraph{
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    .about-skill{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: start;
-    }
-
-    .about-skill p{
-        font-size: 20px;
-    }
-
-    .about-skill hr{
-        height: 8px;
-    }
-
-    .about-achivements{
-        justify-content: space-between;
-    }
-
-    .about-achivement{
-        gap: 10px;
-    }
-    .about-achivement h1{
-        font-size: 30px;
-        font-weight: 600;
-    }
-
-    .about-achivement p {
-        text-align: center;
-        font-size: 18px;
-    }
+.skills{
+    display: grid;
+    row-gap: 40px;
+    column-gap: px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+
+.skills img{
+    width: 70px;
+    height: auto;
+    border-radius: 10px;
+}
+
 
 @media(max-width:1000px){
     .about{
@@ -193,19 +121,6 @@
         line-height: 30px;
     }
 
-    .about-skill{
-        gap: 20px;
-        align-items: start;
-    }
-
-    .about-skill p{
-        font-size: 22px;
-    }
-
-    .about-skill hr{
-        height: 8px;
-    }
-
     .about-achivements{
         justify-content: space-between;
     }
@@ -217,5 +132,66 @@
     .about-achivement h1{
         font-size: 40px;
         font-weight: 600;
+    }
+}
+
+@media(max-width:800px){
+    .about{
+        gap: 80px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+
+    .about-title h1{
+        font-size: 50px;
+        padding: 0;
+    }
+
+    .about-section{
+        flex-direction: column;
+    }
+
+    .about-left{
+       display: none; 
+    }
+
+    .about-right{
+        gap:40px;
+    }
+
+    .about-paragraph{
+        line-height: 30px;
+    }
+
+    .about-paragraph p{
+        font-size: 18px;
+    }
+
+    .about-achivements{
+        justify-content: space-between;
+    }
+
+    .about-achivement{
+        gap: 10px;
+    }
+    .about-achivement h1{
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .about-achivement p {
+        text-align: center;
+        font-size: 18px;
+    }
+    .skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .skills img{
+        width: 55px;
+        height: auto;
+        border-radius: 10px;
     }
 }

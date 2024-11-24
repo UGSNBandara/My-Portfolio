@@ -48,12 +48,6 @@ const Navbar = () => {
                 <li
                 >
 
-                    <AnchorLink className="anchor-link" offset={50} href="#contact"><p className={activeItem == "contact" ? "active" : ""}
-                        onClick={() => handleItemClick("contact")}>Contact</p></AnchorLink>
-                </li>
-                <li
-                >
-
                     <AnchorLink className="anchor-link" offset={50} href="#experience"><p className={activeItem == "experience" ? "active" : ""}
                         onClick={() => handleItemClick("experience")}>Experience</p></AnchorLink>
                 </li>
